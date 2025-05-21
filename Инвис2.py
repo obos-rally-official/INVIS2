@@ -671,7 +671,6 @@ class Ui_MainWindow:
         self.planet_info.setObjectName("planet_info")
         self.planet_info.setFixedWidth(300)
         
-        
     
     # Добавляем элементы в контейнер
         info_container.addStretch()
@@ -728,7 +727,7 @@ class Ui_MainWindow:
             </ol>
            <h3>Почему это эффективно?</h3>
           <ul>
-              <li>Минимум топлива: оптимально для R₂/R₁ &lt;≈ 15.58</li>
+              <li>Минимум топлива: оптимально для R₂/R₁ &lt;≈ 11.94</li>
               <li>Простота и симметрия: легко рассчитывается</li>
           </ul>
            <h3>Применения</h3>
@@ -739,6 +738,7 @@ class Ui_MainWindow:
            </ul>
            <h3>Нюансы 🚀</h3>
            <ul>
+                <li>При значении R₂/R₁ &lt;≈ от 11.94 до 15.58 нужно считать двух- и трехимпульсные перелёты,ища более выгодный</li>
                <li>Для R₂ &gt; 15.58 R₁ выгоднее трёхимпульсный манёвр</li>
                <li>Можно комбинировать с гравиманёврами</li>
            </ul>
@@ -1413,4 +1413,3 @@ if __name__ == "__main__":
     
     window.show()
     sys.exit(app.exec())
-
